@@ -21,7 +21,7 @@ public class GeminiController {
     @PostMapping("/suggest-tasks")
     public ResponseEntity<?> suggestTasks(@RequestBody List<String> todos) {
         try {
-            String apiKey = System.getenv("AIzaSyDCM93OwEeyBNzi7Kef0K-85ARifRv1RMA"); // Make sure this environment variable is correctly set
+            String apiKey = System.getenv("KEY"); // Make sure this environment variable is correctly set
             String input = constructJson(todos);
             return ResponseEntity.ok(geminiFeignClient.getTaskSuggestions(apiKey, input));
         } catch (Exception e) {
