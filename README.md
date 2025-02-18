@@ -2,7 +2,6 @@
 
 TaskQueue is an AI-integrated task manager designed to optimize scheduling and task management through intelligent algorithms.
 
-**Live Server**: [https://taskqueue-1.onrender.com](https://taskqueue-1.onrender.com)
 
 ## Table of Contents
 - [Project Overview](#project-overview)
